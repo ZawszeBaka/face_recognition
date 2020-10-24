@@ -3,7 +3,7 @@ import cv2
 
 def face_detection():
 	# be careful with the path , if the path is wrong, it causes the problem in detectMultiScale with !empty() error  
-	faceCascade = cv2.CascadeClassifier(r'D:\BackupMega\CurrentBackUp\Studying-2018-2019\Digital_Image_Processing_Computer_Vision\human_\haarcascade\haarcascade_frontalface_alt.xml')
+	faceCascade = cv2.CascadeClassifier(r'./haarcascade/haarcascade_frontalface_alt.xml')
 
 	cap = cv2.VideoCapture(0)
 

@@ -4,9 +4,9 @@ import os
 
 def face_recognition():
 	recognizer = cv2.face.LBPHFaceRecognizer_create()
-	recognizer.read('trainer/trainer.yml')
+	recognizer.read('./trainer/trainer.yml')
 
-	faceCascade = cv2.CascadeClassifier(r'D:\BackupMega\CurrentBackUp\Studying-2018-2019\Digital_Image_Processing_Computer_Vision\human_\haarcascade\haarcascade_frontalface_alt.xml')
+	faceCascade = cv2.CascadeClassifier(r'./haarcascade/haarcascade_frontalface_alt.xml')
 	font = cv2.FONT_HERSHEY_SIMPLEX 
 
 	# initialize id counter

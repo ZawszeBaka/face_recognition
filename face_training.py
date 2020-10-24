@@ -18,7 +18,7 @@ import os
 def face_training():
 
 	# Path for face image database 
-	PATH = 'dataset'
+	PATH = './dataset'
 
 	# detector = cv2.CascadeClassifier(r'D:\BackupMega\CurrentBackUp\Studying-2018-2019\Digital_Image_Processing_Computer_Vision\human_\haarcascade\haarcascade_frontalface_alt.xml')
 	# LBPH (Loal Binary Patterns Histograms) Face Recognizer 
@@ -36,6 +36,7 @@ def face_training():
 			PIL_img = Image.open(imagePath).convert('L') # convert it to grayscale
 			img_numpy = np.array(PIL_img, 'uint8')
 
+			print('tqwewqeqwe' , os.path, os.path.split(imagePath))
 			_id = int(os.path.split(imagePath)[-1].split('_')[1])
 		
 			faceSamples.append(img_numpy)

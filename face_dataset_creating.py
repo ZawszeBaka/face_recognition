@@ -9,7 +9,7 @@ def face_dataset_creating():
 	# cam.set(3,640)
 	# cam.set(4,480)
 
-	face_detector = cv2.CascadeClassifier(r'D:\BackupMega\CurrentBackUp\Studying-2018-2019\Digital_Image_Processing_Computer_Vision\human_\haarcascade\haarcascade_frontalface_alt.xml')
+	face_detector = cv2.CascadeClassifier(r'./haarcascade/haarcascade_frontalface_alt.xml')
 
 	# for each person, enter one numeric face id 
 	face_id = input('\n enter user id and press <return> ==>   ')
